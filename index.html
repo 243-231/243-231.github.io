@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krzysztof Warlikowski-kim jest?</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        /* Custom styles for colors and fonts */
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .bg-primary {
+            background-color: #2E2E2E; 
+        }
+        .bg-hero {
+            background-color: #e3e1dc; 
+        }
+        .bg-secondary {
+            background-color: #F5F5F5; 
+        }
+        .bg-accent {
+            background-color: #A67C4D; 
+        }
+        .text-primary {
+            color: #F5F5F5; 
+        }
+        .text-secondary {
+            color: #4B4B4B; 
+        }
+        .text-accent {
+            color: #A67C4D; 
+        }
+        h1, nav h1 {
+            font-family: 'Playfair Display', serif; 
+        }
+        h2 {
+            font-family: 'Playfair Display', serif; 
+        }
+        /* Navbar link styling */
+        .nav-link {
+            border: 2px solid #F5F5F5; 
+            border-radius: 10px; 
+            padding: 0.5rem 1rem; 
+            transition: background-color 0.3s, color 0.3s; 
+        }
+        .nav-link:hover {
+            background-color: #F5F5F5; 
+            color: #2E2E2E;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-primary p-4 shadow-lg fixed w-full top-0 left-0">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-primary text-2xl font-bold">Krzysztof Warlikowski</h1>
+                <div class="flex">
+                    <div class="hidden sm:flex sm:space-x-8">
+                        <ul class="flex space-x-4">
+                            <li><a href="#biography" class="nav-link text-primary hover:text-secondary">Życiorys</a></li>
+                            <li><a href="#shows" class="nav-link text-primary hover:text-secondary">Spektakle</a></li>
+                            <li><a href="#gallery" class="nav-link text-primary hover:text-secondary">Galeria</a></li>
+                            <li><a href="#contact" class="nav-link text-primary hover:text-secondary">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none" aria-expanded="false" aria-label="Main menu">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="menu" class="sm:hidden hidden">
+            <ul class="flex space-x-4">
+                <li><a href="#biography" class="nav-link text-primary hover:text-secondary">Życiorys</a></li>
+                <li><a href="#shows" class="nav-link text-primary hover:text-secondary">Spektakle</a></li>
+                <li><a href="#gallery" class="nav-link text-primary hover:text-secondary">Galeria</a></li>
+                <li><a href="#contact" class="nav-link text-primary hover:text-secondary">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+    
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <section class="bg-hero text-secondary text-center py-20">
+        <div class="container mx-auto">
+            <div class="flex flex-col items-center">
+                <img src="Krzysztof_Warlikowski.png" alt="Krzysztof Warlikowski" class="w-32 h-32 rounded-full mb-4 shadow-lg">
+                <h1 class="text-5xl font-bold mb-2">Krzysztof Warlikowski</h1>
+                <p class="text-lg max-w-2xl mb-4">Krzysztof Warlikowski to wizjonerski polski reżyser teatralny, znany z nowatorskich i skłaniających do refleksji produkcji, które rzucają wyzwanie tradycyjnym narracjom i poruszają współczesne problemy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biography Section -->
+    <section id="biography" class="container mx-auto p-8 bg-white shadow-lg rounded-lg mt-4">
+        <h2 class="text-accent text-3xl font-semibold mb-4">Życiorys</h2>
+        <p class="text-secondary"><strong>Krzysztof Warlikowski</strong> (ur. 26 maja 1962 w Szczecinie) – polski reżyser teatralny.</p>
+        <p class="text-secondary">Jest absolwentem I Liceum Ogólnokształcącego im. Marii Skłodowskiej-Curie w Szczecinie. Studiował historię, filozofię i filologię romańską na Uniwersytecie Jagiellońskim, historię teatru greckiego w École Pratique des Hautes Études na Sorbonie. Dyplom reżyserski zdobył na Wydziale Reżyserii Dramatu Państwowej Wyższej Szkoły Teatralnej w Krakowie, gdzie studiował w latach 1989–1993.</p>
+        <br>
+        <p class="text-secondary">W 1991 asystował Krystianowi Lupie przy realizacji spektaklu Malte albo Tryptyk marnotrawnego syna na podstawie utworów Rainera Marii Rilkego w Narodowym Starym Teatrze w Krakowie. W latach 1992–1993 był asystentem Petera Brooka przy spektaklu Peleas – Impresje (Impressions de Pélleas) według opery Peleas i Melisanda Claude’a Debussy’ego w paryskim Bouffes du Nord. Był również asystentem Ingmara Bergmana i Giorgio Strehlera.</p>
+        <p class="text-secondary">Reżyseruje w kraju i za granicą; do tej pory zrealizował <strong>ponad trzydzieści spektakli</strong>, w tym 11 inscenizacji dramatów Szekspira m.in. Hamleta w Tel Awiwie i Warszawie, Wieczór trzech króli w Stuttgarcie, Poskromienie złośnicy w Warszawie, Burzę w Stuttgarcie i Warszawie, Makbeta w Hanowerze. Drugim ważnym polem zainteresowań teatralnych Warlikowskiego jest dramat antyczny: ma na koncie m.in. głośne przedstawienia Elektry Sofoklesa i Bachantek Eurypidesa. Inscenizuje również dramaty współczesne, m.in. Bernarda-Marie Koltèsa i Sarah Kane. W 2005 roku wyreżyserował spektakl Krum Hanocha Levina (TR Warszawa w koprodukcji ze Starym Teatrem w Krakowie), który został doskonale przyjęty przez większość krytyków, odniósł też sukces na festiwalu teatralnym w Awinionie. W 2006 roku odbyła się premiera wyreżyserowanej przez Warlikowskiego Madame de Sade Yukio Mishimy w Tonnel Groep w Amsterdamie. Na początku 2007 Warlikowski przygotował inscenizację sztuki nagrodzonej Pulitzerem Anioły w Ameryce, autorstwa Tony’ego Kushnera, w przekładzie Jacka Poniedziałka i z nim w jednej z głównych ról.</p>
+        <br>
+        <p class="text-secondary">W 2000 Warlikowski zadebiutował jako reżyser operowy, przygotowując w Teatrze Wielkim w Warszawie prapremierę opery Roxanny Panufnik The Music Programm. W tym samym roku wyreżyserował Don Carlosa Giuseppe Verdiego, a w kolejnych latach m.in. Ignoranta i szaleńca Pawła Mykietyna (2001), Ubu Rexa Krzysztofa Pendereckiego (2003) i Wozzecka Albana Berga (2006), którego libretto oparte jest na dramacie Georga Büchnera. Jego ostatnimi realizacjami operowymi są Ifigenia w Taurydzie Glucka (2006) i Sprawa Makropulos Janáčka (2007) w Operze Paryskiej. W 2008 roku jako pierwszy polski reżyser powojenny zrealizował dzieło Wagnera na Zachodzie. W przygotowywanym Parsifalu spodziewano się niewygodnych nawiązań historycznych. Dzieło przyjęto z buczeniem, okrzykami i jednoczesnymi oklaskami. Skandal wywołały przerywające operę fragmenty filmu Roberto Rosselliniego „Niemcy w roku zero”, które odebrano jako zestawienie dzieła Wagnera z nazizmem. Inni krytycy jednak nazywają to przewrażliwieniem, doceniając pozostałe walory inscenizacji. W 2009 roku wyreżyserował w Operze Paryskiej Króla Rogera Karola Szymanowskiego.</p>
+        <p class="text-secondary">Od 1999 jest związany z warszawskim Teatrem Rozmaitości (później: TR Warszawa). <strong>W 2008 roku został dyrektorem artystycznym Nowego Teatru w Warszawie.</strong></p>
+    </section>
+
+
+
+    <!-- Shows Section -->
+    <section id="shows" class="container mx-auto p-8 bg-white shadow-lg rounded-lg mt-4">
+        <h2 class="text-accent text-3xl font-semibold mb-4">Wybrane spektakle:</h2>
+        
+        <ul class="list-disc list-inside">
+            <li class="text-secondary"><strong><em>(A)pollonia </em></strong> (2009): Przedstawienie Krzysztofa Warlikowskiego na podstawie tekstów Ajschylosa, Eurypidesa, Hanny Krall i innych.</li>
+            <li class="text-secondary"><strong><em>Koniec </em></strong> (2010): Na podstawie Elizabeth Costello Johna Maxwella Coetzee, Procesu i Myśliwego Grakchusa Franza Kafki oraz Nickel Stuff Bernarda-Marie Koltèsa.</li>
+            <li class="text-secondary"><strong><em>Tramwaj </em></strong> (2010): Narodziny tragedii z ducha codzienności. Spektakl w reżyserii Krzysztofa Warlikowskiego na podstawie Tramwaju zwanego pożądaniem Tennessee Williamsa.</li>
+            <li class="text-secondary"><strong><em>Opowieści afrykańskie według Szekspira </em></strong> (2011): Spektakl w reżyserii Krzysztofa Warlikowskiego, na podstawie tekstów Szekspira, powieści J.M. Coetzeego oraz monologów autorstwa Wajdiego Mouawada.</li> 
+            <li class="text-secondary"><strong><em>Francuzi </em></strong> (2015): Teatralna wyprawa Krzysztofa Warlikowskiego w poszukiwaniu źródeł dzisiejszej europejskiej świadomości i tożsamości.</li>
+            <li class="text-secondary"><strong><em>Wyjeżdżamy </em></strong> (2018): Po kilkunastu latach od premiery Kruma Krzysztof Warlikowski powraca do twórczości Hanocha Levina. Krum wracał do ojczyzny po nieudanej wyprawie za granicę, wciąż pełen nadziei na spełnienie. Teraz wszyscy chcą gdzieś wyjechać.</li>
+            <li class="text-secondary"><strong><em>Odyseja. Historia dla Hollywoodu </em></strong> (2021): Spektakl inspirowany „Odyseją” Homera, na podstawie „Powieści dla Hollywoodu” i „Króla kier znów na wylocie” Hanny Krall</li>
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mx-auto p-8 bg-white shadow-lg rounded-lg mt-4">
+        <h2 class="text-accent text-3xl font-semibold mb-4">Galeria</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 space-x-4">
+            <div class="w-100 p-2"><img src="k_warlikowski.png" alt="Krzysztof Warlikowski" class="w-full h-auto rounded-lg shadow-lg"></div>
+            <div class="w-100 p-2"><img src="warlikowski_krzysztof.png" alt="Krzysztof Warlikowski w okularach" class="w-full h-auto rounded-lg shadow-lg"></div>
+            <div class="w-100 p-2"><img src="warlikowski.png" alt="Warlikowski-sesja zdjęciowa" class="w-full h-auto rounded-lg shadow-lg"></div>
+            <div class="w-100 p-2"><img src="alceste_warlikowski.png" alt="Warlikowski podczas opery Alceste" class="w-full h-auto rounded-lg shadow-lg"></div>
+            <div class="w-100 p-2"><img src="warlikowski_proby.png" alt="Warlikowski podczas próby" class="w-full h-auto rounded-lg shadow-lg"></div>
+            <div class="w-100 p-2"><img src="kw_czarnobiałe.png" alt="Warlikowski z papierosem" class="w-full h-auto rounded-lg shadow-lg"></div>
+            <div class="w-100 p-2"><img src="apollonia.png" alt="Plakat spektaklu Apollonia" class="w-full h-auto rounded-lg shadow-lg"></div>
+            <div class="w-100 p-2"><img src="odyseja.png" alt="Plakat spektaklu Odyseja" class="w-full h-auto rounded-lg shadow-lg"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-primary text-primary p-4 mt-4">
+        <h2 class="text-primary text-2xl font-bold">Kontakt</h2>
+        <br>
+        <p>Email: <span class="text-accent">weronikabiegun05@gmail.com</span></p>
+        <p>Phone: <span class="text-accent">+48 691 466 877</span></p>
+        <br>
+        <h2 class="text-primary text-2xl font-bold">Strony powiązane z Warlikowskim</h2>
+        <br>
+        <p><strong>Instagram Nowego Teatru: </strong><a href="https://www.instagram.com/nowy_teatr/"><em>@nowy_teatr</em></a></p>
+        <p><strong>Kalendarz Nowego Teatru: </strong><a href="https://nowyteatr.org/pl/kalendarz"><em>Nadchodzące wydarzenia</em></a></p>
+        <p class="text-center" >2025 Weronika Biegun. Projekt zaliczeniowy.</p>
+    </footer>
+
+</body>
+</html>
